@@ -55,7 +55,7 @@ public class SocketIOEventHandler {
             return;
         }
 
-        System.out.println("Received message from " + username + ": " + message);
+        System.out.println("Received message from :" + username + ": " + message);
 
         // Broadcast the message to all members in the group
         for (UUID memberId : groupMembers.get(groupId)) {
